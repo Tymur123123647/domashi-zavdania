@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Products</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>What do I have in my fridge?</h2>
+
+    <div class="products">
+        <div class="card"><div class="icon">🫑</div>Pepper</div>
+        <div class="card"><div class="icon">🍎</div>Apple</div>
+        <div class="card"><div class="icon">🧀</div>Cheese</div>
+        <div class="card"><div class="icon">🌽</div>Corn</div>
+        <div class="card"><div class="icon">🍄</div>Mushroom</div>
+
+        <div class="card"><div class="icon">🧄</div>Garlic</div>
+        <div class="card"><div class="icon">🥩</div>Beef</div>
+        <div class="card"><div class="icon">🐟</div>Fish</div>
+        <div class="card"><div class="icon">🍳</div>Eggs</div>
+        <div class="card"><div class="icon">🌿</div>Coriander</div>
+    </div>
+
+    <div class="footer">... that's all ...</div>
+</div>
+
+</body>
+</html>

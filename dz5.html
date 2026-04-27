@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Таблиця</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.table-container {
+  width: 80%;
+  margin: 50px auto;
+  overflow: auto;
+  max-height: 400px;
+  border: 1px solid #ccc;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 600px;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: #9ec3d4;
+  z-index: 2;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+tbody th {
+  position: sticky;
+  left: 0;
+  background: #9ec3d4;
+  z-index: 1;
+}
+
+tbody tr:nth-child(odd) td {
+  background: #e6e6e6;
+}
+
+tbody tr:nth-child(even) td {
+  background: #d4d4d4;
+}
+
+tbody tr:first-child td {
+  font-weight: bold;
+}
+
+tbody tr:last-child td {
+  font-style: italic;
+}
+
+tbody tr:nth-child(3) td {
+  color: #333;
+}
+</style>
+</head>
+<body>
+
+<div class="table-container">
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+      <th>Header 4</th>
+      <th>Header 5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Line 1</th>
+      <td>23</td><td>123</td><td>43</td><td>12</td><td>76</td>
+    </tr>
+    <tr>
+      <th>Line 2</th>
+      <td>23</td><td>123</td><td>43</td><td>12</td><td>76</td>
+    </tr>
+    <tr>
+      <th>Line 3</th>
+      <td>34</td><td>63</td><td>25</td><td>7</td><td>23</td>
+    </tr>
+    <tr>
+      <th>Line 4</th>
+      <td>23</td><td>23</td><td>23</td><td>23</td><td>23</td>
+    </tr>
+    <tr>
+      <th>Line 5</th>
+      <td>23</td><td>23</td><td>23</td><td>23</td><td>23</td>
+    </tr>
+    <tr>
+      <th>Line 6</th>
+      <td>23</td><td>23</td><td>23</td><td>23</td><td>23</td>
+    </tr>
+    <tr>
+      <th>Line 7</th>
+      <td>23</td><td>23</td><td>23</td><td>23</td><td>23</td>
+    </tr>
+    <tr>
+      <th>Line 8</th>
+      <td>23</td><td>23</td><td>23</td><td>23</td><td>23</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>To Do List</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 350px;
+    margin: 20px auto;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:nth-child(odd) {
+    background-color: #a8c7d1;
+}
+
+li:nth-child(even) {
+    background-color: #8fb6c2;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.done {
+    background-color: #ddd !important;
+    text-decoration: line-through;
+}
+
+.cross {
+    color: red;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>My To Do List</h2>
+    <ul>
+        <li>
+            <div class="left">☐ Hit the gym</div>
+            <span class="cross">×</span>
+        </li>
+        <li class="done">
+            <div class="left">☑ Pay bills</div>
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <div class="left">☐ Meet John</div>
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <div class="left">☐ Buy eggs</div>
+            <span class="cross">×</span>
+        </li>
+        <li class="done">
+            <div class="left">☑ Read a book</div>
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <div class="left">☐ Organize office</div>
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <div class="left">☐ Eat dinner</div>
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <div class="left">☐ Buy apples</div>
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <div class="left">☐ Meet George</div>
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <div class="left">☐ Feed the cat</div>
+            <span class="cross">×</span>
+        </li>
+        <li class="done">
+            <div class="left">☑ Write a letter</div>
+            <span class="cross">×</span>
+        </li>
+        <li>
+            <div class="left">☐ Run 1 km</div>
+            <span class="cross">×</span>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

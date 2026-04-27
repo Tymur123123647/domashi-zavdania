@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Vertical Menu</title>
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    width: 220px;
+    background-color: #777;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    background-color: #777;
+}
+
+.menu-item:hover {
+    background-color: #555;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #ffd166;
+}
+</style>
+</head>
+<body>
+
+<div class="menu">
+    <div class="menu-item">
+        <div class="icon">✏️</div>
+        <div class="text">EDIT</div>
+    </div>
+    <div class="menu-item">
+        <div class="icon">❤️</div>
+        <div class="text">FAVORITES</div>
+    </div>
+    <div class="menu-item">
+        <div class="icon">🕒</div>
+        <div class="text">HISTORY</div>
+    </div>
+    <div class="menu-item">
+        <div class="icon">🔒</div>
+        <div class="text">SECURITY</div>
+    </div>
+    <div class="menu-item">
+        <div class="icon">⚙️</div>
+        <div class="text">SETTINGS</div>
+    </div>
+</div>
+
+</body>
+</html>
