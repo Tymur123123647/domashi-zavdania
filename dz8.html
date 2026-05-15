@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+.container{
+    min-height:100vh;
+
+    display:grid;
+    grid-template-columns:250px 1fr;
+    grid-template-rows:80px 1fr auto 70px;
+
+    grid-template-areas:
+    "header header"
+    "sidebar main"
+    "sidebar cards"
+    "footer footer";
+}
+
+header{
+    grid-area:header;
+
+    background:#4f46e5;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 30px;
+}
+
+header button{
+    padding:10px 20px;
+    border:none;
+    background:white;
+    color:#4f46e5;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+aside{
+    grid-area:sidebar;
+
+    background:#1e293b;
+    color:white;
+
+    padding:30px 20px;
+}
+
+aside ul{
+    list-style:none;
+}
+
+aside li{
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+main{
+    grid-area:main;
+
+    padding:30px;
+    background:white;
+}
+
+main h2{
+    margin-bottom:15px;
+}
+
+main p{
+    line-height:1.6;
+}
+
+.cards{
+    grid-area:cards;
+
+    padding:30px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+footer{
+    grid-area:footer;
+
+    background:#4f46e5;
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+@media(max-width:900px){
+
+    .container{
+        grid-template-columns:1fr;
+
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "main"
+        "cards"
+        "footer";
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Clinic Dashboard</h1>
+        <button>Login</button>
+    </header>
+
+    <aside>
+        <ul>
+            <li>Dashboard</li>
+            <li>Patients</li>
+            <li>Doctors</li>
+            <li>Appointments</li>
+            <li>Settings</li>
+        </ul>
+    </aside>
+
+    <main>
+        <h2>Welcome to Clinic Panel</h2>
+        <p>
+            This is the main information block. Here you can place
+            statistics, reports, notifications or other useful data.
+        </p>
+    </main>
+
+    <section class="cards">
+
+        <div class="card">
+            <h3>Patients</h3>
+            <p>1,250 registered patients.</p>
+        </div>
+
+        <div class="card">
+            <h3>Doctors</h3>
+            <p>48 active doctors in system.</p>
+        </div>
+
+        <div class="card">
+            <h3>Appointments</h3>
+            <p>320 appointments today.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>2026 Clinic Dashboard</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
